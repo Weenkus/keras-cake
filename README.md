@@ -1,4 +1,4 @@
-# keras-cake : Keras community [layers](https://keras.io/layers/writing-your-own-keras-layers/) implementations with examples
+# keras-cake : Keras community [layers](https://keras.io/layers/writing-your-own-keras-layers/) implementations
 
 <p align="center">
 <a href="https://github.com/ambv/black/blob/master/LICENSE"><img alt="License: MIT" src="https://black.readthedocs.io/en/stable/_static/license.svg"></a>
