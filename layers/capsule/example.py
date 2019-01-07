@@ -1,6 +1,5 @@
 from keras.datasets import imdb
-from keras.layers import (GRU, Activation, Dense, Flatten, Embedding,
-                         SpatialDropout1D)
+from keras.layers import GRU, Activation, Dense, Flatten, Embedding, SpatialDropout1D
 from keras.models import Sequential
 from keras.preprocessing import sequence
 
@@ -16,13 +15,7 @@ print("Build model...")
 model = Sequential()
 model.add(Embedding(max_features, 128))
 model.add(SpatialDropout1D(0.2))
-model.add(
-    GRU(
-        128,
-        dropout=0.2,
-        return_sequences=True
-    )
-)
+model.add(GRU(128, dropout=0.2, return_sequences=True))
 model.add(Capsule(num_capsule=10, dim_capsule=16, routings=5, share_weights=True))
 model.add(Flatten())
 model.add(Dense(1))
