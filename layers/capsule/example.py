@@ -1,5 +1,6 @@
 from keras.datasets import imdb
-from keras.layers import GRU, Activation, Dense, Flatten, Embedding, SpatialDropout1D
+from keras.layers import (GRU, Activation, Dense, Embedding, Flatten,
+                          SpatialDropout1D)
 from keras.models import Sequential
 from keras.preprocessing import sequence
 

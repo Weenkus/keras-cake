@@ -1,5 +1,5 @@
 from keras import backend as K
-from keras.layers import Layer, Activation
+from keras.layers import Activation, Layer
 
 
 def squash(x, axis=-1):

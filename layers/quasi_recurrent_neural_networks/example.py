@@ -3,16 +3,8 @@ from __future__ import print_function
 import numpy as np
 from keras.constraints import maxnorm
 from keras.datasets import imdb
-from keras.layers import (
-    GRU,
-    LSTM,
-    Activation,
-    Dense,
-    Dropout,
-    Embedding,
-    SimpleRNN,
-    SpatialDropout1D,
-)
+from keras.layers import (GRU, LSTM, Activation, Dense, Dropout, Embedding,
+                          SimpleRNN, SpatialDropout1D)
 from keras.models import Sequential
 from keras.preprocessing import sequence
 from keras.regularizers import l2
